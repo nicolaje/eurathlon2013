@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" minHeight="700.0" minWidth="1300.0" prefHeight="700.0" prefWidth="1300.0"  xmlns:fx="http://javafx.com/fxml" fx:controller="com.buggy.main.ControlVueController">
+  <children>
+    <ChoiceBox fx:id="choiceBoxFocus" AnchorPane.rightAnchor="489.0" AnchorPane.topAnchor="12.0" />
+    <Label prefHeight="21.0" text="Robot ID :" AnchorPane.rightAnchor="600.0" AnchorPane.topAnchor="12.0" />
+    <Pane fx:id="paneCameraFocus" minHeight="240.0" minWidth="320.0" prefHeight="240.0" prefWidth="320.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="24.0" />
+    <ScrollPane fx:id="canvasCarte" prefHeight="615.0" prefWidth="446.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="445.0" AnchorPane.topAnchor="60.0" />
+    <Separator layoutX="336.0" layoutY="0.0" orientation="VERTICAL" prefHeight="264.0" />
+    <Separator layoutX="0.0" layoutY="264.0" minHeight="0.0" prefHeight="0.0" prefWidth="336.0" />
+    <ScrollPane fx:id="canvasCarteLocale" prefHeight="615.0" prefWidth="446.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+    <GridPane layoutX="34.0" layoutY="350.0">
+      <children>
+        <Label minWidth="-1.0" prefWidth="-1.0" text="1" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <Label text="Connect" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+        <Label text="Etat" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+        <CheckBox fx:id="checkBoxConnection1" mnemonicParsing="false" scaleX="1.5" scaleY="1.5" scaleZ="1.0" text="" underline="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <CheckBox fx:id="checkBoxConnection2" mnemonicParsing="false" scaleX="1.5" scaleY="1.5" text="" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <CheckBox fx:id="checkBoxConnection3" mnemonicParsing="false" scaleX="1.5" scaleY="1.5" text="" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+        <CheckBox fx:id="checkBoxConnection4" mnemonicParsing="false" scaleX="1.5" scaleY="1.5" text="" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+        <CheckBox fx:id="checkBoxConnection5" mnemonicParsing="false" scaleX="1.5" scaleY="1.5" text="" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+        <ChoiceBox fx:id="choiceBoxEtat1" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+        <ChoiceBox fx:id="choiceBoxEtat2" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+        <ChoiceBox fx:id="choiceBoxEtat3" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+        <ChoiceBox fx:id="choiceBoxEtat4" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+        <ChoiceBox fx:id="choiceBoxEtat5" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+        <CheckBox fx:id="checkBoxPosition1" allowIndeterminate="false" mnemonicParsing="false" scaleX="1.5" scaleY="1.5" text="" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+        <CheckBox fx:id="checkBoxPosition2" mnemonicParsing="false" scaleX="1.5" scaleY="1.5" text="" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+        <CheckBox fx:id="checkBoxPosition3" mnemonicParsing="false" scaleX="1.5" scaleY="1.5" text="" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+        <CheckBox fx:id="checkBoxPosition4" mnemonicParsing="false" scaleX="1.5" scaleY="1.5" text="" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+        <CheckBox fx:id="checkBoxPosition5" mnemonicParsing="false" scaleX="1.5" scaleY="1.5" text="" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+        <Label text="Good Pos" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+        <Label text="2" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+        <Label text="3" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+        <Label text="4" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+        <Label text="5" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="98.0" minWidth="10.0" prefWidth="28.0" />
+        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-1.0" minWidth="-1.0" percentWidth="-1.0" prefWidth="-1.0" />
+        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-1.0" minWidth="-1.0" prefWidth="-1.0" />
+        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-1.0" minWidth="-1.0" prefWidth="-1.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="31.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+    </GridPane>
+    <CheckBox fx:id="checkBoxUltrason" layoutX="273.0" layoutY="279.0" mnemonicParsing="false" text="Camera ultrason" />
+    <Button fx:id="buttonCamera" layoutX="255.0" layoutY="318.0" mnemonicParsing="false" text="Camera connect" />
+    <Label fx:id="labelVitesse" layoutX="113.0" layoutY="279.0" text="Vitesse 90/90" />
+    <MenuBar fx:id="menu"  prefWidth="-1.0" AnchorPane.leftAnchor="340.0" AnchorPane.topAnchor="0.0"/>
+
+  </children>
+</AnchorPane>
