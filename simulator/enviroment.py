@@ -6,9 +6,8 @@ poses = []
 motions = []
 sicks = []
 for i in range(5):
-    robots.append(Pioneer3DX("Robot"+str(i)))
+    robots.append(ATRV("Robot"+str(i)))
     robots[i].translate(x=-2.0*i,y=0.0,z=0.0)
-    robots[i].unparent_wheels() 
 
     motions.append(MotionVWDiff("robot"+str(i)+".motion"))
     robots[i].append(motions[i])
