@@ -18,7 +18,7 @@ for i in range(5):
     robots[i].append(poses[i])
 
     sicks.append(Sick("robot"+str(i)+".sick"))
-    sicks[i].translate(x=0.1,y=0.0,z=0.25)
+    sicks[i].translate(x=0.1,y=0,z=0.85)
     sicks[i].properties(Visible_arc=True, laser_range=5.0)
     robots[i].append(sicks[i])
 
