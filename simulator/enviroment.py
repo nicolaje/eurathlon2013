@@ -9,7 +9,7 @@ for i in range(5):
     robots.append(ATRV("Robot"+str(i)))
     robots[i].translate(x=-2.0*i,y=0.0,z=0.0)
 
-    motions.append(MotionVWDiff("robot"+str(i)+".motion"))
+    motions.append(MotionVW("robot"+str(i)+".motion"))
     robots[i].append(motions[i])
 
     poses.append(Pose("robot"+str(i)+".pose"))
