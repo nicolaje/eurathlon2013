@@ -3,3 +3,4 @@ embedded/raspberry_pi/BackupCarteSD.gz
 embedded/raspberry_pi/RaspiSoftware/bin/
 control_station/BuggySoft/build/
 control_station/BuggySoft/dist/
+*~
